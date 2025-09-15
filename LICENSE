@@ -1,0 +1,47 @@
+C-index Academic & Non-Commercial License v1.0
+Copyright (c) 2025 C-index authors
+
+DEFINITIONS
+“Software” means the code and associated documentation in this repository.
+“Academic Use” means use for teaching or research by students, faculty, or staff at
+nonprofit educational or research institutions.
+“Non-Commercial Use” means any use not primarily intended for or directed toward
+commercial advantage or monetary compensation.
+
+GRANT OF RIGHTS
+Subject to the terms below, permission is hereby granted, free of charge, to any person
+obtaining a copy of the Software to use, copy, modify, merge, and redistribute the
+Software, in whole or in part, for Academic Use or Non-Commercial Use.
+
+CONDITIONS
+1. All copies or substantial portions of the Software must include this license notice and
+   the above copyright notice.
+2. Any redistributed modifications must clearly indicate changes from the original.
+3. In academic publications, please cite the associated paper (e.g., arXiv:2507.17980).
+
+
+RESTRICTIONS
+1. Commercial Use is not permitted under this license. To obtain a commercial license,
+   contact the authors (e.g., etourani@vols.utk.edu) to arrange separate terms.
+2. You may not use the names of the authors or contributors to endorse or promote
+   products derived from this Software without prior written permission.
+
+DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+LIMITATION OF LIABILITY
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+TERMINATION
+This license terminates automatically if you breach any of its terms. Upon termination,
+you must cease all use and distribution of the Software, except where continuing use is
+allowed by applicable law despite this limitation.
+
+SEVERABILITY
+If any provision of this license is held unenforceable, the remaining provisions shall
+remain in full force and effect.

@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: cindex
+Version: 0.1.0
+Summary: C-index (Crystallinity Index) toolkit for training and applying logistic models.
+Author: C-index authors
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.22
+Requires-Dist: pandas>=2.0
+Requires-Dist: scikit-learn>=1.1
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: scikit-learn
+Requires-Dist: umap-learn
+Requires-Dist: hdbscan

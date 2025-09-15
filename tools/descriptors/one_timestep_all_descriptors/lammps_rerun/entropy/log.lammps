@@ -1,0 +1,101 @@
+LAMMPS (7 Feb 2024 - Update 1)
+units           lj
+atom_style       molecular
+boundary        p  p  p
+
+pair_style      lj/cut 2.5
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  multi/harmonic
+
+read_data      ../c1s1run1_300K.data
+Reading data file ...
+  orthogonal box = (-0.34024598 -0.34024598 -0.34024598) to (16.850246 16.850246 16.850246)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  9000 atoms
+  reading velocities ...
+  9000 velocities
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  scanning dihedrals ...
+  1 = max dihedrals/atom
+  reading bonds ...
+  8940 bonds
+  reading angles ...
+  8880 angles
+  reading dihedrals ...
+  8820 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.056 seconds
+
+#pair_modify    shift   yes
+pair_coeff      1    1    1.0        1.0    2.5
+#pair_coeff      2  2   2.4255  1.0   2.5
+#pair_coeff      1  2   1.5574  1.0   2.5
+bond_coeff      1   74415    0.3919
+angle_coeff     1   664.893  114
+dihedral_coeff  1   21.4898  -42.9574  2.9021  67.3404 0
+
+
+neighbor 	0.5 bin
+neigh_modify 	every 6 delay 0 check yes # one 10000
+
+
+special_bonds lj 1.0 1.0 1.0 #angle yes dihedral yes
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+
+neigh_modify  page 100000  one 10000
+neighbor       5.11   bin
+
+compute       Entp  all entropy/atom 0.070 5.1  avg yes 2.5 #local yes
+dump            dmp2    all    custom   10000   dump_rerunS_avg_t2  id   mol  x y z  c_Entp # ix iy iz
+
+thermo_style custom step
+thermo         10000
+
+
+rerun  ../dump_t2 dump x y z ix iy iz 
+WARNING: No fixes with time integration, atoms won't move (../verlet.cpp:60)
+Generated 1 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 6 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 10000, page size: 100000
+  master list distance cutoff = 7.61
+  ghost atom cutoff = 7.61
+  binsize = 3.805, bins = 5 5 5
+  2 neighbor lists, perpetual/occasional/extra = 2 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+  (2) compute entropy/atom, perpetual
+      attributes: full, newton on, ghost
+      pair build: full/bin/ghost
+      stencil: full/ghost/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 1003 | 1003 | 1003 Mbytes
+   Step    
+  22990000 
+  23000000 
+  23010000 
+Loop time of 26.2177 on 1 procs for 3 steps with 9000 atoms
+
+Total wall time: 0:00:26

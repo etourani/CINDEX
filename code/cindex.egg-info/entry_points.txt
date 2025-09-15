@@ -1,0 +1,2 @@
+[console_scripts]
+cindex = cindex.cli:main

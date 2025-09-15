@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cindex"
+version = "0.1.0"
+description = "C-index (Crystallinity Index) toolkit for training and applying logistic models."
+authors = [{name="C-index authors"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.22",
+  "pandas>=2.0",
+  "scikit-learn>=1.1",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+  "scikit-learn",
+  "umap-learn",
+  "hdbscan" 
+]
+
+[project.scripts]
+cindex = "cindex.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["./"]
+include = ["cindex*"]
+exclude = ["tests*"]
