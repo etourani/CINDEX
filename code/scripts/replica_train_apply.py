@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # C-INDEX: TRAIN ON REPLICA-1, APPLY TO REPLICA-2 (argv-driven; no hard-coded paths)
 import os, json, argparse, numpy as np, pandas as pd, matplotlib.pyplot as plt, matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
