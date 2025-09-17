@@ -11,3 +11,17 @@ __pycache__/
 .env
 .venv
 .ipynb_checkpoints/
+
+# Output folders: ignore contents, keep structure
+results/*
+!results/.gitkeep
+
+figures/*
+!figures/.gitkeep
+
+tmp/*
+!tmp/.gitkeep
+
+models/*
+!models/.gitkeep
+
