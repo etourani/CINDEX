@@ -10,10 +10,10 @@ There is also additional tools in tools/ for calculations of OPs used in this pa
 ## Quick start
 ```bash
 # 1) Install package locally
-pip install -e ./code
+pip install -e ./
 Optional, to check the install, you can try:
 which cindex
-cindex labelize -h
+cindex --help
 
 # 2) Unsupervised labeling (UMAP→HDBSCAN)
 cindex labelize --input data/examples/df_tmid1.csv --output data/examples/df_tmid1_labeled.csv

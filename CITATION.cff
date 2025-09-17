@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this software or the C-index order parameter, please cite as below."
+type: software
+title: "CINDEX: Crystallinity Index toolkit for polymer MD trajectories"
+version: "0.1.1"
+date-released: 2025-08-01
+repository-code: "https://github.com/etourani/CINDEX"
+url: "https://github.com/etourani/CINDEX"
+license: other
+license-url: "https://github.com/etourani/CINDEX/blob/main/LICENSE"
+
+authors:
+  - family-names: "Tourani"
+    given-names: "Elyar"
+    orcid: "https://orcid.org/0009-0003-5181-6835"
+  - family-names: "Edwards"
+    given-names: "Brian J."
+    orcid: "https://orcid.org/0000-0002-2378-5627"
+  - family-names: "Khomami"
+    given-names: "Bamin"
+    orcid: "https://orcid.org/0000-0002-0091-2312"
+
+keywords:
+  - polymer crystallization
+  - molecular dynamics
+  - order parameters
+  - machine learning
+  - C-index
+
+preferred-citation:
+  type: article
+  title: "Machine Learning Workflow for Analysis of High-Dimensional Order Parameter Space: A Case Study of Polymer Crystallization from Molecular Dynamics Simulations"
+  authors:
+    - family-names: "Tourani"
+      given-names: "Elyar"
+      orcid: "https://orcid.org/0009-0003-5181-6835"
+    - family-names: "Edwards"
+      given-names: "Brian J."
+      orcid: "https://orcid.org/0000-0002-2378-5627"
+    - family-names: "Khomami"
+      given-names: "Bamin"
+      orcid: "https://orcid.org/0000-0002-0091-2312"
+  doi: "10.48550/arXiv.2507.17980"
+  date-published: 2025-08-01
+  journal: "arXiv"
+  start: 1
+  end: 1
+  notes: "Preprint"
+
+
+abstract: >
+  CINDEX provides a reproducible workflow to compute entropy (S), p2, q6 descriptors,
+  fit a logistic C-index on a labeled snapshot, and apply the frozen model across
+  time and system sizes for polymer crystallization analyses.
+
+
+
+## Related Work and Companion Repositories
+- [DEB](https://github.com/etourani/DEB): Implementation of Directional Entropy Bands (DEB), a surface-oriented descriptor for interfacial crystallization analysis.  
+- [SOAP descriptors](https://github.com/etourani/DEB/SOAP): Supplemental code and examples for the SOAP-based analysis of polymers.
+- Publications:    
+  - Tourani et al., *Directional Entropy Bands for Surface Characterization of Polymer Crystallization* https://doi.org/10.3390/polym17172399.  

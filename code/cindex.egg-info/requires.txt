@@ -1,8 +1,0 @@
-numpy>=1.22
-pandas>=2.0
-scikit-learn>=1.1
-matplotlib>=3.7
-pyyaml>=6.0
-scikit-learn
-umap-learn
-hdbscan
