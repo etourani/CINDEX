@@ -90,7 +90,7 @@ python scripts/replica_train_apply.py   --data-dir data/examples   --train df_tm
 ---
 
 
-**How to cite**
+## How to cite
 
 If you use this software, the C-index order parameter, please cite:
 
@@ -106,13 +106,13 @@ If you use the entropy bands or DEB features from this toolkit, please also cite
 
 ---
 
-**License**
+## License
 
 See LICENSE. For academic and non-commercial use; please contact the authors for other licensing options.
 
 ---
 
-**Changelog / contributing / conduct**
+## Changelog / contributing / conduct
 
 See CHANGELOG.md for version history.
 
