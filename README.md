@@ -23,7 +23,7 @@ python -c "import cindex, importlib; importlib.import_module('cindex.cli')"
 cindex --help
 ```
 
-### 2) Unsupervised labeling (UMAP → HDBSCAN)
+### 2) Unsupervised labeling (UMAP --> HDBSCAN)
 
 ```bash
 # Minimal
