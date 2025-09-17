@@ -1,4 +1,4 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -7,13 +7,7 @@ __pycache__/
 .dist/
 .build/
 
-# Envs / notebooks
+# Environment files
 .env
 .venv
 .ipynb_checkpoints/
-
-# Outputs
-/results/
-figures/
-tmp/
-
