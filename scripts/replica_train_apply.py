@@ -279,7 +279,7 @@ def main():
     os.makedirs(os.path.dirname(args.figA_out) or ".", exist_ok=True)
     os.makedirs(os.path.dirname(args.figB_out) or ".", exist_ok=True)
     os.makedirs(os.path.dirname(args.figBfrac_out) or ".", exist_ok=True)
-    plot_snapshot_compare(df2, fpath=args.figA_out, snap_by_t=args.snap_by_t, snap_by_step=args.snap_by_step)
+    #plot_snapshot_compare(df2, fpath=args.figA_out, snap_by_t=args.snap_by_t, snap_by_step=args.snap_by_step)
     plot_time_evolution_counts(df2, fpath=args.figB_out)
     plot_time_evolution_fraction(df2, fpath=args.figBfrac_out, window=15)
 
